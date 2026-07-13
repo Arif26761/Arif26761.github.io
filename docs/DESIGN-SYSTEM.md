@@ -7,14 +7,14 @@
 
 ## 1. Brand Identity
 
-| Attribute | Value |
-|---|---|
-| Name | **MD. Arif Rahman** |
-| Wordmark | `Arif.` — the `A` filled with the primary→accent gradient |
-| Positioning | Data Scientist & ML Researcher, now building scalable frontend products |
+| Attribute             | Value                                                                        |
+| --------------------- | ---------------------------------------------------------------------------- |
+| Name                  | **MD. Arif Rahman**                                                          |
+| Wordmark              | `Arif.` — the `A` filled with the primary→accent gradient                    |
+| Positioning           | Data Scientist & ML Researcher, now building scalable frontend products      |
 | Rotating roles (hero) | `Data Scientist` · `Frontend Developer` · `ML Researcher` · `Problem Solver` |
-| Voice | Confident, precise, technical-but-human. Short sentences. No buzzword soup. |
-| Location | Dhaka, Bangladesh (GMT+6) |
+| Voice                 | Confident, precise, technical-but-human. Short sentences. No buzzword soup.  |
+| Location              | Dhaka, Bangladesh (GMT+6)                                                    |
 
 **Design north star:** _"A researcher's precision meets a frontend engineer's polish."_
 Clean, data-inspired, subtly animated. Never noisy. Every motion has a reason.
@@ -28,6 +28,7 @@ We evolve the original `#1363df` blue into a refined **blue → indigo** primary
 hex in components — use the CSS variable / Tailwind token).
 
 ### Brand ramp (raw)
+
 ```
 --blue-50:  #eef4ff   --blue-400: #4d8bff   --blue-700: #1b4fd1
 --blue-100: #dbe6ff   --blue-500: #2f6bf0   --blue-800: #1a41a8
@@ -37,21 +38,22 @@ hex in components — use the CSS variable / Tailwind token).
 
 ### Semantic tokens (the ones components use)
 
-| Token | Light | Dark | Use |
-|---|---|---|---|
-| `--background` | `#f6f9ff` | `#0a0e1a` | Page base |
-| `--surface` | `#ffffff` | `#111726` | Cards, nav |
-| `--surface-2` | `#eef3fc` | `#182036` | Elevated / hover |
-| `--border` | `#e2e9f5` | `#232c44` | Hairlines |
-| `--text` | `#0f1b2d` | `#eaf0fb` | Primary text |
-| `--text-muted` | `#5c6169` | `#9aa6bd` | Secondary text |
-| `--text-subtle` | `#90979f` | `#66708a` | Captions, meta |
-| `--primary` | `#1363df` | `#4d8bff` | Brand actions |
-| `--primary-fg` | `#ffffff` | `#0a0e1a` | Text on primary |
-| `--accent` | `#0891b2` | `#22d3ee` | Highlights, focus |
-| `--ring` | `#2f6bf0` | `#4d8bff` | Focus outline |
+| Token           | Light     | Dark      | Use               |
+| --------------- | --------- | --------- | ----------------- |
+| `--background`  | `#f6f9ff` | `#0a0e1a` | Page base         |
+| `--surface`     | `#ffffff` | `#111726` | Cards, nav        |
+| `--surface-2`   | `#eef3fc` | `#182036` | Elevated / hover  |
+| `--border`      | `#e2e9f5` | `#232c44` | Hairlines         |
+| `--text`        | `#0f1b2d` | `#eaf0fb` | Primary text      |
+| `--text-muted`  | `#5c6169` | `#9aa6bd` | Secondary text    |
+| `--text-subtle` | `#90979f` | `#66708a` | Captions, meta    |
+| `--primary`     | `#1363df` | `#4d8bff` | Brand actions     |
+| `--primary-fg`  | `#ffffff` | `#0a0e1a` | Text on primary   |
+| `--accent`      | `#0891b2` | `#22d3ee` | Highlights, focus |
+| `--ring`        | `#2f6bf0` | `#4d8bff` | Focus outline     |
 
 ### Signature gradients
+
 ```
 --grad-brand:   linear-gradient(135deg, #1363df 0%, #4d8bff 55%, #22d3ee 100%);
 --grad-title:   linear-gradient(155deg, var(--text) 0%, var(--primary) 90%);
@@ -69,13 +71,14 @@ fills. Dark mode is the design's "hero" surface; both modes ship first-class, te
 Modernizes the old Poppins/Asap pairing into a technical, distinctive trio (all self-hosted
 via `next/font` — no runtime CDN).
 
-| Role | Family | Notes |
-|---|---|---|
-| Display / headings | **Space Grotesk** | Geometric, technical, distinctive |
-| Body / UI | **Inter** | Clean, highly legible at all sizes |
+| Role                 | Family             | Notes                                              |
+| -------------------- | ------------------ | -------------------------------------------------- |
+| Display / headings   | **Space Grotesk**  | Geometric, technical, distinctive                  |
+| Body / UI            | **Inter**          | Clean, highly legible at all sizes                 |
 | Mono / labels / code | **JetBrains Mono** | Signals "engineer"; used for eyebrows, stats, tags |
 
 ### Type scale (fluid, `clamp()`)
+
 ```
 --fs-display: clamp(2.75rem, 6vw, 4.5rem)   /* hero H1 */
 --fs-h1:      clamp(2rem, 4vw, 3rem)
@@ -107,13 +110,13 @@ via `next/font` — no runtime CDN).
 
 **Library:** Motion (Framer Motion). **Principle:** _entrance once, feedback always._
 
-| Token | Value |
-|---|---|
-| `--ease-out` | `cubic-bezier(0.16, 1, 0.3, 1)` |
+| Token          | Value                            |
+| -------------- | -------------------------------- |
+| `--ease-out`   | `cubic-bezier(0.16, 1, 0.3, 1)`  |
 | `--ease-inout` | `cubic-bezier(0.65, 0, 0.35, 1)` |
-| duration-fast | `0.18s` (hover/press) |
-| duration-base | `0.4s` (entrances) |
-| duration-slow | `0.7s` (hero, scroll reveals) |
+| duration-fast  | `0.18s` (hover/press)            |
+| duration-base  | `0.4s` (entrances)               |
+| duration-slow  | `0.7s` (hero, scroll reveals)    |
 
 - Scroll reveals: fade + 16px rise, stagger children by `0.06s`.
 - **`prefers-reduced-motion` is mandatory** — all non-essential motion disabled, no parallax,

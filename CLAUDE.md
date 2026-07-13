@@ -4,11 +4,13 @@
 **Lead + Worker** team of Claude sessions. Know your role before you touch code.
 
 ## What this is
+
 The official personal portfolio of **MD. Arif Rahman** — Data Scientist & ML Researcher moving
 into frontend engineering. It must itself demonstrate technical depth, polish, and
 maintainability. Public site: **https://arif26761.github.io**.
 
 ## Roles — know which one you are
+
 - **Lead session (design/team lead):** owns architecture, design system, task breakdown,
   review, testing, merging. Writes issues and hands off to workers. Does **not** hand-code
   features. Only the Lead merges to `master`.
@@ -20,6 +22,7 @@ maintainability. Public site: **https://arif26761.github.io**.
 If you were handed a specific task/issue, you are a **Worker**. Default to that.
 
 ## Source of truth (do not contradict these)
+
 - `docs/ARCHITECTURE.md` — stack, folders, rendering/deploy model.
 - `docs/DESIGN-SYSTEM.md` — tokens, type, spacing, motion, components. **Use tokens only.**
 - `docs/SECTIONS.md` — the locked per-section creative direction.
@@ -27,11 +30,13 @@ If you were handed a specific task/issue, you are a **Worker**. Default to that.
 - `docs/ROADMAP.md` — milestones and the task backlog.
 
 ## Tech stack (locked — do not swap without Lead approval)
-Next.js 15 (App Router) · React 19 · TypeScript strict · Tailwind CSS v4 · Motion ·
+
+Next.js 16 (App Router) · React 19 · TypeScript strict · Tailwind CSS v4 · Motion ·
 next-themes · lucide-react · pnpm · Vitest · Playwright · ESLint + Prettier ·
 Cloudflare Worker (contact API) · static export → GitHub Pages via GitHub Actions.
 
 ## Commands
+
 ```bash
 corepack enable            # first time — enables pnpm
 pnpm install
@@ -43,9 +48,11 @@ pnpm test                  # Vitest unit
 pnpm test:e2e              # Playwright
 pnpm format                # Prettier write
 ```
+
 (If a script doesn't exist yet, task #1 creates it. Match `package.json` as it evolves.)
 
 ## Hard rules
+
 1. **Design tokens only** — never hardcode colors/spacing/radii/shadows; pull from the tokens
    defined in `globals.css` / Tailwind theme. No magic numbers.
 2. **Light AND dark mode** are both first-class. Test both every time.
@@ -61,15 +68,18 @@ pnpm format                # Prettier write
 9. **Workers open PRs, never merge.** One issue → one branch → one PR.
 
 ## Definition of Done
+
 See `docs/WORKFLOW.md`. Summary: design-accurate · both themes · responsive · accessible ·
 typed · lint/format clean · tested · `pnpm build` passes.
 
 ## Git conventions
+
 - Branches: `feat|fix|chore|docs|refactor|test/<short-desc>`, one per issue.
 - Conventional Commits. PR body: what changed, **light + dark screenshots**, test notes,
   `Closes #<issue>`, and a Definition-of-Done self-check.
 - End commit messages with the Co-Authored-By trailer for the authoring model.
 
 ## When unsure
+
 Re-read `docs/`. If still ambiguous, ask the Lead/Owner in the issue or PR thread. Do not
 silently change architecture, stack, or design direction.
