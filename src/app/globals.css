@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
+/*
+ * Design tokens — single source of truth is docs/DESIGN-SYSTEM.md.
+ * Theme strategy: next-themes toggles a `.dark` class on <html>. The custom
+ * variant below makes Tailwind's `dark:` utilities respond to that class.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ----------------------------- Light theme ----------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f9ff;
+  --surface: #ffffff;
+  --surface-2: #eef3fc;
+  --border: #e2e9f5;
+  --text: #0f1b2d;
+  --text-muted: #5c6169;
+  --text-subtle: #90979f;
+  --primary: #1363df;
+  --primary-fg: #ffffff;
+  --accent: #0891b2;
+  --ring: #2f6bf0;
+
+  /* Signature gradients */
+  --grad-brand: linear-gradient(135deg, #1363df 0%, #4d8bff 55%, #22d3ee 100%);
+  --grad-title: linear-gradient(155deg, var(--text) 0%, var(--primary) 90%);
+  --grad-surface: linear-gradient(98deg, var(--surface-2) 0%, var(--surface) 100%);
+  --glow: radial-gradient(circle, rgb(77 139 255 / 0.2) 0%, rgb(19 99 223 / 0) 70%);
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgb(15 27 45 / 0.06), 0 2px 6px rgb(148 161 170 / 0.1);
+  --shadow-md: 0 6px 24px rgb(15 27 45 / 0.1);
+  --shadow-glow: 0 8px 32px rgb(19 99 223 / 0.28);
 }
 
+/* ------------------------------ Dark theme ----------------------------- */
+.dark {
+  --background: #0a0e1a;
+  --surface: #111726;
+  --surface-2: #182036;
+  --border: #232c44;
+  --text: #eaf0fb;
+  --text-muted: #9aa6bd;
+  --text-subtle: #66708a;
+  --primary: #4d8bff;
+  --primary-fg: #0a0e1a;
+  --accent: #22d3ee;
+  --ring: #4d8bff;
+
+  --grad-title: linear-gradient(155deg, var(--text) 0%, var(--primary) 90%);
+  --grad-surface: linear-gradient(98deg, var(--surface-2) 0%, var(--surface) 100%);
+  --glow: radial-gradient(circle, rgb(77 139 255 / 0.16) 0%, rgb(19 99 223 / 0) 70%);
+
+  /* Dark mode leans on borders/inner highlights over heavy shadows. */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4), 0 2px 6px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 8px 28px rgb(0 0 0 / 0.5);
+  --shadow-glow: 0 8px 32px rgb(77 139 255 / 0.3);
+}
+
+/* ------------------- Map tokens into the Tailwind theme ----------------- */
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-fg);
+  --color-accent: var(--accent);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ------------------------------ Base layer ----------------------------- */
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), var(--font-sans), sans-serif;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  /* Consistent, accessible focus ring across the whole app. */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--primary-fg);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* --------------------------- Utility helpers --------------------------- */
+@utility text-gradient {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility font-eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
