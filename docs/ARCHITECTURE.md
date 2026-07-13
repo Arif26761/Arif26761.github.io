@@ -2,26 +2,27 @@
 
 ## Stack (locked)
 
-| Layer | Choice | Version target |
-|---|---|---|
-| Framework | Next.js (App Router) | 15.x |
-| UI runtime | React | 19.x |
-| Language | TypeScript (strict) | 5.x |
-| Styling | Tailwind CSS | v4 |
-| Animation | Motion (Framer Motion) | latest |
-| Theming | next-themes | latest |
-| Icons | lucide-react (+ simple-icons for brands) | latest |
-| Package manager | **pnpm** (via `corepack enable`) | 9.x |
-| Unit tests | Vitest + Testing Library | latest |
-| E2E tests | Playwright | latest |
-| Lint / format | ESLint (next/core-web-vitals) + Prettier | latest |
-| Backend (contact) | Cloudflare Worker | wrangler 3.x |
-| Hosting | GitHub Pages (static export) | — |
-| CI/CD | GitHub Actions | — |
+| Layer             | Choice                                   | Version target |
+| ----------------- | ---------------------------------------- | -------------- |
+| Framework         | Next.js (App Router)                     | 16.x           |
+| UI runtime        | React                                    | 19.x           |
+| Language          | TypeScript (strict)                      | 5.x            |
+| Styling           | Tailwind CSS                             | v4             |
+| Animation         | Motion (Framer Motion)                   | latest         |
+| Theming           | next-themes                              | latest         |
+| Icons             | lucide-react (+ simple-icons for brands) | latest         |
+| Package manager   | **pnpm** (via `corepack enable`)         | 9.x            |
+| Unit tests        | Vitest + Testing Library                 | latest         |
+| E2E tests         | Playwright                               | latest         |
+| Lint / format     | ESLint (next/core-web-vitals) + Prettier | latest         |
+| Backend (contact) | Cloudflare Worker                        | wrangler 3.x   |
+| Hosting           | GitHub Pages (static export)             | —              |
+| CI/CD             | GitHub Actions                           | —              |
 
 **Node:** 20.17+ (repo pins via `.nvmrc` / `engines`).
 
 ## Rendering & deployment model
+
 - `next.config.ts` → `output: 'export'` (fully static). `images.unoptimized = true`.
 - **User site** (`arif26761.github.io`) serves from root → **no `basePath`** needed.
 - GitHub Actions builds `out/` and deploys to Pages on push to `master`.
@@ -29,6 +30,7 @@
   calls it via `NEXT_PUBLIC_CONTACT_ENDPOINT`.
 
 ## Directory structure (target)
+
 ```
 portfolio/
 ├─ .github/workflows/
@@ -61,17 +63,20 @@ portfolio/
 ```
 
 ## Content-driven principle
+
 All copy, projects, skills, and experience live in **typed files under `src/content/`**.
 Updating the portfolio = editing data, not JSX. This is the core maintainability guarantee —
 components render data, they don't hardcode it.
 
 ## Contact backend (Cloudflare Worker)
+
 - `POST /contact` → validates (name/email/message, zod-style), checks honeypot, rate-limits
   by IP, sends email (Resend/MailChannels), returns typed JSON `{ ok, error? }`.
 - CORS locked to the site origin. Secrets via `wrangler secret` (never committed).
 - Frontend fetches it; graceful degradation if the endpoint is unset (mailto fallback).
 
 ## Performance & SEO budget
+
 - Lighthouse ≥ 95 (Perf / A11y / Best-practices / SEO). LCP < 2.0s, CLS < 0.05.
 - Per-page metadata, Open Graph image, JSON-LD `Person` schema, sitemap + robots.
 - Fonts self-hosted via `next/font`; images sized + lazy; zero layout shift.
