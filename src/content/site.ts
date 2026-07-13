@@ -1,10 +1,10 @@
 /**
  * Global site metadata, identity, navigation, and social links.
  * Editing the portfolio's "chrome" starts here — components read from this file.
+ * Source of truth: MD. Arif Rahman's current CV (Telecom + Full-Stack).
  */
 
-export type SocialName =
-  "github" | "linkedin" | "researchgate" | "instagram" | "facebook" | "whatsapp" | "email";
+export type SocialName = "github" | "linkedin" | "researchgate" | "whatsapp" | "email";
 
 export interface SocialLink {
   name: SocialName;
@@ -26,17 +26,28 @@ export const site = {
   shortName: "Arif",
   /** Wordmark: rendered as `Arif.` with a gradient dot. */
   wordmark: "Arif",
+  /** Primary professional title (from the primary CV). */
+  title: "Telecommunication Engineer & Full-Stack Developer",
   email: "arif26761@gmail.com",
-  location: "Dhaka, Bangladesh",
+  phone: "+8801521561275",
+  location: "Azimpur, Dhaka, Bangladesh",
   /** IANA timezone for the About "local time" card. */
   timezone: "Asia/Dhaka",
   url: "https://arif26761.github.io",
-  tagline: "Data Scientist & ML Researcher building scalable frontend products.",
+  /** Short hero tagline. */
+  tagline:
+    "Full-stack developer and telecommunication engineering graduate (CCNA), fluent across the software and network layers of an ISP.",
   /** Roles cycled in the hero banner. */
-  roles: ["Data Scientist", "Frontend Developer", "ML Researcher", "Problem Solver"],
+  roles: [
+    "Full-Stack Developer",
+    "Telecommunication Engineer",
+    "Network Engineer (CCNA)",
+    "React & Next.js Developer",
+  ],
+  /** Full meta description. */
   description:
-    "Portfolio of MD. Arif Rahman — Data Scientist & ML Researcher with experience in NLP, foundation models, and WiFi-based localization, now crafting solid, scalable frontend web products.",
-  resumePath: "/assets/Md_Arif_Rahman_CV.pdf",
+    "MD. Arif Rahman — Telecommunication Engineer & Full-Stack Developer (CCNA). Fluent across the software and network layers of an ISP: TCP/IP, routing & switching and wireless/RF, with hands-on React, Next.js and Node.js delivery.",
+  resumePath: "/assets/MD_Arif_Rahman_CV.pdf",
   portraitPath: "/assets/hero.png",
 } as const;
 
@@ -67,18 +78,6 @@ export const socials: SocialLink[] = [
     label: "ResearchGate",
     href: "https://www.researchgate.net/profile/Mdarif-Rahman",
     icon: "researchgate",
-  },
-  {
-    name: "instagram",
-    label: "Instagram",
-    href: "https://www.instagram.com/m.d.__arif__/",
-    icon: "Instagram",
-  },
-  {
-    name: "facebook",
-    label: "Facebook",
-    href: "https://www.facebook.com/Arifrahmanbijoy/",
-    icon: "Facebook",
   },
   {
     name: "whatsapp",

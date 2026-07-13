@@ -7,17 +7,17 @@
 
 ## 1. Brand Identity
 
-| Attribute             | Value                                                                        |
-| --------------------- | ---------------------------------------------------------------------------- |
-| Name                  | **MD. Arif Rahman**                                                          |
-| Wordmark              | `Arif.` — the `A` filled with the primary→accent gradient                    |
-| Positioning           | Data Scientist & ML Researcher, now building scalable frontend products      |
-| Rotating roles (hero) | `Data Scientist` · `Frontend Developer` · `ML Researcher` · `Problem Solver` |
-| Voice                 | Confident, precise, technical-but-human. Short sentences. No buzzword soup.  |
-| Location              | Dhaka, Bangladesh (GMT+6)                                                    |
+| Attribute             | Value                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| Name                  | **MD. Arif Rahman**                                                                                      |
+| Wordmark              | `Arif.` — the `A` filled with the primary→accent gradient                                                |
+| Positioning           | Telecommunication Engineer & Full-Stack Developer (CCNA)                                                 |
+| Rotating roles (hero) | `Full-Stack Developer` · `Telecommunication Engineer` · `Network Engineer` · `React & Next.js Developer` |
+| Voice                 | Confident, precise, technical-but-human. Short sentences. No buzzword soup.                              |
+| Location              | Azimpur, Dhaka, Bangladesh (GMT+6)                                                                       |
 
-**Design north star:** _"A researcher's precision meets a frontend engineer's polish."_
-Clean, data-inspired, subtly animated. Never noisy. Every motion has a reason.
+**Design north star:** _"An engineer fluent across the software and network layers."_
+Clean, network-inspired, subtly animated. Never noisy. Every motion has a reason.
 
 ---
 

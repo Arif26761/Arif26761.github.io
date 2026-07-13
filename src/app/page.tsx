@@ -1,4 +1,5 @@
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { site } from "@/content/site";
 
 const swatches = [
   { name: "background", className: "bg-background" },
@@ -19,13 +20,14 @@ export default function Home() {
       </header>
 
       <div className="flex flex-col gap-4">
-        <p className="font-eyebrow text-primary">Design system online</p>
+        <p className="font-eyebrow text-primary">{site.title}</p>
         <h1 className="text-4xl font-bold sm:text-5xl">
-          <span className="text-gradient">MD. Arif Rahman</span>
+          <span className="text-gradient">{site.name}</span>
         </h1>
-        <p className="text-muted max-w-prose">
-          The foundation and design language are in place — tokens, light/dark theming, and the type
-          system below. Sections are built one at a time per{" "}
+        <p className="text-muted max-w-prose">{site.tagline}</p>
+        <p className="text-subtle max-w-prose text-sm">
+          Design system online — tokens, light/dark theming, and the type system below. Sections are
+          built one at a time per{" "}
           <code className="text-foreground font-mono">docs/SECTIONS.md</code>. Try the theme toggle.
         </p>
       </div>

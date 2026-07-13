@@ -5,9 +5,11 @@
 
 ## What this is
 
-The official personal portfolio of **MD. Arif Rahman** — Data Scientist & ML Researcher moving
-into frontend engineering. It must itself demonstrate technical depth, polish, and
-maintainability. Public site: **https://arif26761.github.io**.
+The official personal portfolio of **MD. Arif Rahman** — Telecommunication Engineer &
+Full-Stack Developer (CCNA), fluent across the software and network layers of an ISP. It must
+itself demonstrate technical depth, polish, and maintainability. Public site:
+**https://arif26761.github.io**. The content source of truth is his current CV — see
+`src/content/`.
 
 ## Roles — know which one you are
 

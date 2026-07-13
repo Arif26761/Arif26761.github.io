@@ -1,7 +1,7 @@
 # MD. Arif Rahman — Portfolio
 
-The official personal portfolio of **MD. Arif Rahman** — Data Scientist & ML Researcher
-building scalable, polished frontend products.
+The official personal portfolio of **MD. Arif Rahman** — Telecommunication Engineer &
+Full-Stack Developer (CCNA), fluent across the software and network layers of an ISP.
 
 🌐 **Live:** https://arif26761.github.io
 
