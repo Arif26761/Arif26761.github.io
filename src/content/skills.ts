@@ -1,6 +1,8 @@
 /**
  * Skills. `radar` powers the Skills radar chart; `groups` powers the
- * categorized chips with proficiency meters.
+ * categorized chips with proficiency meters. Sourced from the CV's
+ * Skills & Expertise and Workflow & Tools sections. Levels are estimates —
+ * adjust in issue #17.
  */
 
 export interface RadarAxis {
@@ -24,67 +26,83 @@ export interface SkillGroup {
 
 /** High-level domains summarized on the radar chart. */
 export const radar: RadarAxis[] = [
-  { axis: "Machine Learning", value: 85 },
-  { axis: "Data Analysis", value: 88 },
-  { axis: "Research", value: 82 },
-  { axis: "Frontend", value: 78 },
-  { axis: "Problem Solving", value: 90 },
-  { axis: "Backend", value: 65 },
+  { axis: "Frontend", value: 88 },
+  { axis: "Backend", value: 78 },
+  { axis: "Databases", value: 75 },
+  { axis: "Networking", value: 85 },
+  { axis: "Security", value: 70 },
+  { axis: "Problem Solving", value: 88 },
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    name: "Languages",
-    icon: "Code2",
-    skills: [
-      { name: "Python", level: 92 },
-      { name: "JavaScript", level: 80 },
-      { name: "TypeScript", level: 74 },
-      { name: "SQL", level: 78 },
-    ],
-  },
-  {
-    name: "ML & Data",
-    icon: "BrainCircuit",
-    skills: [
-      { name: "PyTorch", level: 82 },
-      { name: "NLP", level: 85 },
-      { name: "Foundation Models", level: 80 },
-      { name: "Pandas / NumPy", level: 88 },
-      { name: "scikit-learn", level: 80 },
-    ],
-  },
-  {
     name: "Frontend",
     icon: "MonitorSmartphone",
     skills: [
-      { name: "React", level: 78 },
-      { name: "Next.js", level: 74 },
-      { name: "HTML / CSS", level: 88 },
-      { name: "Tailwind CSS", level: 80 },
+      { name: "React", level: 85 },
+      { name: "Next.js", level: 80 },
+      { name: "JavaScript", level: 85 },
+      { name: "HTML / CSS3", level: 90 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "REST API Integration", level: 82 },
     ],
   },
   {
-    name: "Tools",
-    icon: "Wrench",
+    name: "Backend",
+    icon: "Server",
     skills: [
+      { name: "Node.js", level: 78 },
+      { name: "Express", level: 74 },
+      { name: "PHP", level: 78 },
+      { name: "Laravel", level: 70 },
+    ],
+  },
+  {
+    name: "Databases",
+    icon: "Database",
+    skills: [
+      { name: "MySQL", level: 80 },
+      { name: "PostgreSQL", level: 74 },
+      { name: "MongoDB", level: 72 },
+    ],
+  },
+  {
+    name: "Networking",
+    icon: "Network",
+    skills: [
+      { name: "TCP/IP & Subnetting", level: 85 },
+      { name: "Routing & Switching", level: 82 },
+      { name: "LAN / WAN", level: 80 },
+      { name: "DNS / DHCP", level: 80 },
+    ],
+  },
+  {
+    name: "Security & Tools",
+    icon: "ShieldCheck",
+    skills: [
+      { name: "Nmap / Zenmap", level: 72 },
+      { name: "Packet Analysis (Scapy)", level: 70 },
       { name: "Git & GitHub", level: 85 },
-      { name: "Jupyter", level: 88 },
-      { name: "Linux", level: 72 },
+      { name: "Linux", level: 74 },
+      { name: "Figma (design-to-code)", level: 76 },
     ],
   },
 ];
 
-/** Tech logos for the auto-scrolling marquee (files under /public/assets/icons). */
+/** Tech names for the auto-scrolling marquee. */
 export const techMarquee: string[] = [
-  "Python",
-  "PyTorch",
   "React",
   "Next.js",
-  "TypeScript",
+  "JavaScript",
   "Tailwind CSS",
-  "Pandas",
-  "SQL",
-  "Git",
+  "Node.js",
+  "Express",
+  "PHP",
+  "Laravel",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "CCNA",
   "Linux",
+  "Git",
 ];

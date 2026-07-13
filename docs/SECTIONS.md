@@ -22,22 +22,23 @@ signature of the brand, kept and refined.
 
 ---
 
-## 1. Hero — "Data Constellation"
+## 1. Hero — "Network Topology"
 
 **DNA kept:** greeting → name → animated role banner → dual CTAs (See My Work / Download CV)
 → social row → circular framed portrait.
-**Signature:** an interactive **constellation / neural-network canvas** behind the content —
-points connected by faint lines that drift and subtly react to the cursor (a nod to his
-ML/data-science work). The circular portrait frame becomes an **animated gradient ring**.
+**Signature:** an interactive **network-topology canvas** behind the content — nodes connected
+by faint links that drift and subtly react to the cursor (a nod to his telecom/networking work
+— topology, packets, nodes). The circular portrait frame becomes an **animated gradient ring**.
 
 - Rotating role via typewriter/flip (`Space Grotesk`).
-- **Magnetic** primary CTA. Portrait uses the transparent `Hero-image.png`.
-- Reduced-motion: constellation freezes to a static elegant dot field.
+- **Magnetic** primary CTA. Portrait uses the transparent portrait asset.
+- Reduced-motion: the network freezes to a static elegant node field.
 
 ## 2. About — "Bento Board"
 
 **DNA kept:** the **bento grid** (the original's best idea) — bio, stat counters
-(150+ / 3+), profile blurb, education timeline (expand-in-place), expertise logo marquee.
+(years / roles / research), profile blurb, education timeline (expand-in-place), expertise
+logo marquee.
 **Signature:** glassmorphic bento cards with a **cursor-following spotlight**; stat cards
 **count up** on scroll into view; the **education card expands in place** (evolves the old
 `:focus` accordion) with a mini timeline. A live **"Dhaka · local time"** card adds a human touch.
@@ -45,22 +46,24 @@ ML/data-science work). The circular portrait frame becomes an **animated gradien
 ## 3. Projects — "Case-Study Cards"
 
 **DNA kept:** filterable gallery (replaces the old MixItUp plan with React state).
-**Signature:** category filter chips (`ML / Research` · `Web` · `Data`); each card **expands
+**Signature:** category filter chips (`Web` · `Research` · `Networking`); each card **expands
 into a full case-study panel** via Motion shared-layout animation (no page nav). Cards
 **tilt** on hover with a brand glow. Empty-filter and loading states handled.
 
 ## 4. Skills — "Proficiency Radar"
 
 **DNA kept:** the auto-scrolling **tech-logo marquee** from the old expertise slider.
-**Signature:** a **radar/spider chart** (a data-scientist's signature visual) summarizing
-skill domains, paired with categorized chips that have **animated proficiency meters**.
-Toggle between "Radar" and "Grid" views. Follows the `dataviz` skill for the chart.
-Reduced-motion: meters render at final value instantly; radar is static SVG.
+**Signature:** a **radar/spider chart** summarizing skill domains (Frontend, Backend,
+Databases, Networking, Security, Problem Solving), paired with categorized chips that have
+**animated proficiency meters**. Toggle between "Radar" and "Grid" views. Follows the
+`dataviz` skill for the chart. Reduced-motion: meters render at final value instantly; radar
+is static SVG.
 
-## 5. Experience & Research — "Scroll Timeline" _(new section — showcases his research depth)_
+## 5. Experience & Research — "Scroll Timeline" _(showcases his work + research depth)_
 
-**Rationale:** his positioning leans on research (NLP, WiFi-localization, smart-city) +
-publications. This section is what sets him apart for technical roles.
+**Rationale:** his profile spans full-stack roles (I-Transition, IAT/BUET), telecom/networking
+(CCNA), and research (smart-building energy, device-free indoor localization). This section
+ties the story together for technical roles.
 **Signature:** a vertical **scroll-driven timeline** whose progress line **fills as you scroll**;
 nodes reveal role/research cards with tags and links (incl. ResearchGate). Alternating
 left/right on desktop, single-column on mobile.

@@ -22,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MD. Arif Rahman — Portfolio",
+  title: "MD. Arif Rahman — Telecommunication Engineer & Full-Stack Developer",
   description:
-    "Portfolio of MD. Arif Rahman — Data Scientist & ML Researcher building scalable frontend products.",
+    "Portfolio of MD. Arif Rahman — Telecommunication Engineer & Full-Stack Developer (CCNA). Fluent across the software and network layers of an ISP, with hands-on React, Next.js and Node.js delivery.",
 };
 
 export default function RootLayout({
