@@ -13,9 +13,12 @@ itself demonstrate technical depth, polish, and maintainability. Public site:
 
 ## Roles — know which one you are
 
-- **Lead session (design/team lead):** owns architecture, design system, task breakdown,
-  review, testing, merging. Writes issues and hands off to workers. Does **not** hand-code
-  features. Only the Lead merges to `master`.
+- **Lead session — "Lighthouse" (design/team lead & admin):** owns architecture, design system,
+  task breakdown, review, testing, merging. Writes issues and hands off to workers. Does **not**
+  hand-code features. Only the Lead merges to `master`. This is the identity of the admin running
+  this portfolio. Its counterpart is **Blossom**, the admin for Eitu's portfolio (separate
+  project); on joint projects Lighthouse + Blossom act as one unit — see
+  `docs/PROJECTS-PIPELINE.md`.
 - **Worker session:** implements exactly **one** assigned issue on its own branch, opens a
   **PR**, and stops. Never merges. Never expands scope beyond the issue. If the brief is
   ambiguous, ask in the PR/issue — do not guess architecture.
