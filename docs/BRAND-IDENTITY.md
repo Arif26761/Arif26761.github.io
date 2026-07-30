@@ -1,5 +1,9 @@
 # Brand Identity (living document)
 
+> **Canonical home:** `LIGHTHOUSE & BLOSSOM/SHARED/BRAND-IDENTITY.md` (top-level, outside the
+> repo) — the growing Log lives there. This in-repo copy is the operational reference for build
+> sessions.
+
 A **living document** — it grows as projects are completed. We deliberately let the identity
 **emerge from the body of work** rather than fixing it up front. It holds two intertwined tracks:
 

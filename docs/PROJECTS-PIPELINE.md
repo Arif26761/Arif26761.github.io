@@ -1,5 +1,8 @@
 # Projects Pipeline
 
+> **Canonical home:** `LIGHTHOUSE & BLOSSOM/SHARED/PROJECTS-PIPELINE.md` (top-level, outside the
+> repo). This in-repo copy is the operational reference for this portfolio.
+
 How portfolio **project pieces** are sourced, modernized, reviewed, and integrated. This applies
 to both portfolios (Arif's and Eitu's) and defines when the two admins act **solo** vs. as a
 **joint unit**.
