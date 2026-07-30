@@ -37,18 +37,24 @@ functional portfolio piece — and then the admin **integrates** the finished pr
      methods · Outcome / result (numbers if any) · Links (live/repo/paper/case study) · Images?
 2. **Appointment brief.** The admin generates a **prompt + md brief** to appoint the Project Lead
    session. The brief defines: **goal & demands**, the **theme** to follow (aligned to the
-   portfolio's design system), the **deliverables**, the **modernization scope** (2026 features),
-   and the quality bar (typed, tested, accessible, responsive, both themes, performant).
+   portfolio's design system), a **unique angle** vs. every existing portfolio project (no two
+   projects should feel alike — see `BRAND-IDENTITY.md`), the **deliverables**, the
+   **modernization scope** (2026 features), and the quality bar (typed, tested, accessible,
+   responsive, both themes, performant).
 3. **Build (in the project repo).** The Project Lead session creates the project's own repo and
    modernizes/builds there.
 4. **Review & acceptance (in the project repo).** Scan design and workflow; request changes until
    satisfied. **Unit testing + design-satisfaction** are the acceptance gates (see roles below).
+   Also confirm the project **stands apart** from every existing piece (uniqueness check).
 5. **Merge (in the project repo).** Merge the accepted project in that repo (see roles below).
 6. **Integration (in the portfolio repo).** Each admin integrates the finished project into
    **their own** portfolio — a typed entry in `src/content/projects.ts`, a case-study,
    screenshots/links to the project — **as that admin sees fit, with owner consent**, via the
    portfolio's normal PR flow. For a joint project, Lighthouse integrates into Arif's site and
    Blossom into Eitu's site, independently.
+7. **Brand-identity update.** After integration, **Lighthouse + Blossom brainstorm the finished
+   project together** and **update `BRAND-IDENTITY.md`** — capturing what this piece adds to the
+   emerging signature for the owners and for the admins.
 
 ## Joint-project roles (Lighthouse + Blossom as a unit)
 - **Appointment brief:** co-authored by **Lighthouse + Blossom**.

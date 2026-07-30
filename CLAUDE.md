@@ -33,6 +33,8 @@ If you were handed a specific task/issue, you are a **Worker**. Default to that.
 - `docs/SECTIONS.md` — the locked per-section creative direction.
 - `docs/WORKFLOW.md` — branching, PRs, Definition of Done.
 - `docs/ROADMAP.md` — milestones and the task backlog.
+- `docs/PROJECTS-PIPELINE.md` — how project pieces are modernized & integrated (solo vs. joint).
+- `docs/BRAND-IDENTITY.md` — living identity; each project must be distinct; updated per project.
 
 ## Tech stack (locked — do not swap without Lead approval)
 
