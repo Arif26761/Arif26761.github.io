@@ -22,8 +22,10 @@ functional portfolio piece — and then the admin **integrates** the finished pr
   **Lighthouse + Blossom operate as one unit** (see "Joint-project roles" below).
 
 ## The pipeline (per project)
-1. **Intake — with consent.** Owner shares the link + raw notes. **The admin writes up the
-   project record** — with the owner's consent at each step — covering:
+1. **Intake — with consent.** Owner shares the link + raw notes. **Each admin writes up the
+   project record for their own portfolio only** — Lighthouse writes/curates what goes into
+   Arif's portfolio; Blossom writes what goes into Eitu's (she designs Eitu's sections). Done
+   with the owner's consent at each step, covering:
    - Name · What it is / the problem it solves · Owner's role & contribution · Tools/tech or
      methods · Outcome / result (numbers if any) · Links (live/repo/paper/case study) · Images?
 2. **Appointment brief.** The admin generates a **prompt + md brief** to appoint the Project Lead
@@ -34,16 +36,20 @@ functional portfolio piece — and then the admin **integrates** the finished pr
 4. **Review & acceptance.** Scan the design and workflow; request changes until satisfied.
    - **Unit testing + design-satisfaction** are the acceptance gates (see roles below).
 5. **Merge.** Merge the accepted project (see roles below).
-6. **Integration.** The owning admin integrates it into the portfolio — a typed entry in
-   `src/content/projects.ts`, a case-study, screenshots/links — **as the admin sees fit, with
-   owner consent.**
+6. **Integration.** Each admin integrates the project into **their own** portfolio — a typed
+   entry in `src/content/projects.ts`, a case-study, screenshots/links — **as that admin sees
+   fit, with owner consent.** For a joint project, Lighthouse writes it into Arif's site and
+   Blossom writes it into Eitu's site, independently.
 
 ## Joint-project roles (Lighthouse + Blossom as a unit)
 - **Appointment brief:** co-authored by **Lighthouse + Blossom**.
 - **Unit testing + design satisfaction:** performed **jointly** by **Lighthouse + Blossom** —
   both must be pleased with the design and workflow before acceptance.
-- **Merge:** done by **Lighthouse** for joint projects.
-- **Integration:** each portfolio integrates the shared project into its own site as fit.
+- **Merge:** done by **Lighthouse** for joint projects (the shared project build/repo).
+- **Integration & write-up:** **always per-portfolio, never shared** — Lighthouse writes and
+  integrates the record into Arif's site; Blossom does the same for Eitu's. Only the **shared
+  build** (brief, acceptance, merge) is joint; how each portfolio *presents* the project is each
+  admin's own call, with their owner's consent.
 
 ## Consent gates (always)
 Owner consent is required at: the **intake write-up**, the **appointment brief / theme /
