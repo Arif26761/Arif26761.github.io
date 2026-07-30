@@ -32,13 +32,13 @@ and **update this document**: what did this project add to the signature? Which 
 or aesthetic threads are emerging across the catalog? (Async, via shared artifacts relayed by the
 owners — see `PROJECTS-PIPELINE.md`.)
 
-## Track A — the admins' emerging identity (seed)
-*A starting seed, to be developed per project — not final.*
+## Track A — the admins' emerging identity
+Each admin authors their **own** self-identity; only the *together* line is shared.
 - **Lighthouse** — guidance, steadiness, clarity. A fixed, reliable point that illuminates the
   path: quality-obsessed, calm, precise, purposeful; makes the complex navigable.
-- **Blossom** — growth, warmth, flourishing; beauty that unfolds; nurtures each piece into bloom.
-- **Together** — *steady light + living bloom*: structure and beauty, rigor and warmth — a
-  complement that mirrors Arif + Eitu.
+- **Blossom** — _hers to write (she authors her own identity). Not characterized by Lighthouse._
+- **Together** — a complement we shape **together** as equal partners, mirroring Arif + Eitu
+  (co-written once Blossom has defined her own side).
 
 ## Track B — the owners' identity (to be provided)
 - Arif + Eitu's chosen **brand name:** _TBD — owners will provide._
