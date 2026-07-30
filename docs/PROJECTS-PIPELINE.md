@@ -10,6 +10,13 @@ Projects are **not added to the portfolio raw**. The owner provides a **link** (
 for 2026** — refresh it, fix it, and add whatever features are needed to make it a strong,
 functional portfolio piece — and then the admin **integrates** the finished project into the site.
 
+## Where the work happens (two repos)
+- **The project's own repo** — created by the Project Lead session. **All build, unit testing,
+  design-satisfaction review, change requests, and merges happen here.** The admins do their
+  review/testing/merge work in this repo, not in the portfolio repo.
+- **The portfolio repo** — only receives the final **integration** (a content entry / case-study
+  that links to the finished project), following the portfolio's normal branch→PR→merge flow.
+
 ## The two admins
 - **Lighthouse** — Arif's portfolio admin (this session).
 - **Blossom** — Eitu's portfolio admin (the counterpart session).
@@ -32,20 +39,22 @@ functional portfolio piece — and then the admin **integrates** the finished pr
    session. The brief defines: **goal & demands**, the **theme** to follow (aligned to the
    portfolio's design system), the **deliverables**, the **modernization scope** (2026 features),
    and the quality bar (typed, tested, accessible, responsive, both themes, performant).
-3. **Build.** The Project Lead session modernizes/builds the project on its own repo/branch.
-4. **Review & acceptance.** Scan the design and workflow; request changes until satisfied.
-   - **Unit testing + design-satisfaction** are the acceptance gates (see roles below).
-5. **Merge.** Merge the accepted project (see roles below).
-6. **Integration.** Each admin integrates the project into **their own** portfolio — a typed
-   entry in `src/content/projects.ts`, a case-study, screenshots/links — **as that admin sees
-   fit, with owner consent.** For a joint project, Lighthouse writes it into Arif's site and
-   Blossom writes it into Eitu's site, independently.
+3. **Build (in the project repo).** The Project Lead session creates the project's own repo and
+   modernizes/builds there.
+4. **Review & acceptance (in the project repo).** Scan design and workflow; request changes until
+   satisfied. **Unit testing + design-satisfaction** are the acceptance gates (see roles below).
+5. **Merge (in the project repo).** Merge the accepted project in that repo (see roles below).
+6. **Integration (in the portfolio repo).** Each admin integrates the finished project into
+   **their own** portfolio — a typed entry in `src/content/projects.ts`, a case-study,
+   screenshots/links to the project — **as that admin sees fit, with owner consent**, via the
+   portfolio's normal PR flow. For a joint project, Lighthouse integrates into Arif's site and
+   Blossom into Eitu's site, independently.
 
 ## Joint-project roles (Lighthouse + Blossom as a unit)
 - **Appointment brief:** co-authored by **Lighthouse + Blossom**.
-- **Unit testing + design satisfaction:** performed **jointly** by **Lighthouse + Blossom** —
-  both must be pleased with the design and workflow before acceptance.
-- **Merge:** done by **Lighthouse** for joint projects (the shared project build/repo).
+- **Unit testing + design satisfaction:** performed **jointly** by **Lighthouse + Blossom**,
+  **in the project's repo** — both must be pleased with the design and workflow before acceptance.
+- **Merge:** done by **Lighthouse** for joint projects, **in the project's repo**.
 - **Integration & write-up:** **always per-portfolio, never shared** — Lighthouse writes and
   integrates the record into Arif's site; Blossom does the same for Eitu's. Only the **shared
   build** (brief, acceptance, merge) is joint; how each portfolio *presents* the project is each
